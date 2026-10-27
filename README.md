@@ -118,7 +118,19 @@ This product uses the TMDB API but is not endorsed or certified by TMDB. Datos e
 
 ### Firebase
 
-Capturas en [`docs/`](docs/): usuarios en *Authentication → Users*, la subcolección `mi_lista` con al menos 3 documentos y el simulador de reglas denegando el acceso de otra cuenta.
+**Usuarios registrados** (*Authentication → Users*), incluidas las cuentas de prueba A y B:
+
+<img src="docs/capturas/09-firebase-usuarios.jpeg" width="800">
+
+**Subcolección `usuarios/{uid}/mi_lista`** con 4 documentos (id `tipo_tmdbId`):
+
+<img src="docs/capturas/10-firestore-mi-lista.jpeg" width="800">
+
+**Simulador de reglas**: la cuenta B no puede leer la lista de otra cuenta; la dueña sí.
+
+| Otra cuenta → rechazado | Dueña → autorizado |
+|---|---|
+| <img src="docs/capturas/11-reglas-otra-cuenta-denegado.jpeg" width="400"> | <img src="docs/capturas/12-reglas-duena-autorizado.jpeg" width="400"> |
 
 ## Uso de IA
 
