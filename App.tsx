@@ -1,20 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { CarteleraProvider } from './src/context/CarteleraContext';
+import { RootNavigator } from './src/navigation/RootNavigator';
+import { colores } from './src/utils/tema';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaProvider>
+      <CarteleraProvider>
+        <View style={{ flex: 1, backgroundColor: colores.fondo }}>
+          <RootNavigator />
+        </View>
+        <StatusBar style="light" />
+      </CarteleraProvider>
+    </SafeAreaProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

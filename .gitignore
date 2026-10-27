@@ -39,3 +39,10 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# claves (solo se sube .env.example)
+.env
+.env.*
+!.env.example
+.firebase/
+*.log
