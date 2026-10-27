@@ -106,6 +106,18 @@ This product uses the TMDB API but is not endorsed or certified by TMDB. Datos e
 
 ## Evidencias
 
+### Capturas de la app (móvil)
+
+| Iniciar sesión | Buscar | Resultados de búsqueda | Mi lista vacía |
+|---|---|---|---|
+| <img src="docs/capturas/01-login.jpeg" width="180"> | <img src="docs/capturas/02-buscar-vacio.jpeg" width="180"> | <img src="docs/capturas/03-buscar-resultados.jpeg" width="180"> | <img src="docs/capturas/04-mi-lista-vacia.jpeg" width="180"> |
+
+| Mi lista con películas | Mi lista con una serie | Filtro por series | Acerca de |
+|---|---|---|---|
+| <img src="docs/capturas/05-mi-lista-peliculas.jpeg" width="180"> | <img src="docs/capturas/06-mi-lista-con-serie.jpeg" width="180"> | <img src="docs/capturas/07-mi-lista-filtro-series.jpeg" width="180"> | <img src="docs/capturas/08-acerca-de.jpeg" width="180"> |
+
+### Firebase
+
 Capturas en [`docs/`](docs/): usuarios en *Authentication → Users*, la subcolección `mi_lista` con al menos 3 documentos y el simulador de reglas denegando el acceso de otra cuenta.
 
 ## Uso de IA
